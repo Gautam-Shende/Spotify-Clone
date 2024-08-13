@@ -1,0 +1,249 @@
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #323946;
+    scroll-behavior: smooth;
+    color: #fff;
+  } 
+
+  ::-webkit-scrollbar {
+    scroll-behavior: smooth;
+  }
+  
+  /* Sidebar Styles */
+  
+   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .sidebar h1 {
+    font-size: 30px;
+  }
+  
+  .home-search {
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+    font-weight: 600;
+  }
+
+  .home-search ion-icon {
+    font-size: 1.6rem;
+    margin-top: 15px;
+  }
+
+  .home-search span {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .sidebar .library {
+    max-width: 100%;
+    height: 120px;
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 30px #323946;
+    cursor: pointer;
+  }
+
+  .library .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .library:hover {
+    height: 230px;
+    background:#323946 ;
+  }
+ 
+  .library ul {
+    list-style-type: none;
+    margin: 3px 20px;
+  }
+
+  .instruction {
+    margin-top: 12px;
+  }
+
+  .instruction a {
+    color:mediumpurple;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 6px 10px ;
+    display: inline-block;
+  }
+
+  .language-Btn {
+    margin-top: 10px;
+    margin-left: 22px;
+    border-radius: 20px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .language-Btn ion-icon {
+    font-size: 20px;
+  }
+
+  .language-Btn span {
+    font-size: 18px ;
+    font-weight: 600;
+  }
+
+  /* ==================== Main Bar Styles ====================== */
+  
+   .mainbar {
+    position: relative;
+    top: 0;
+    left: 220px;
+    right: 0;
+    border-radius: 10px;
+    width: calc(100% - 220px);
+    height: 100%;
+    background-color: #000;
+    padding: 20px ;
+  }
+
+  .cursor {
+    position: absolute;
+    left: 0;
+    top: 19px;
+    font-size: 30px;
+    margin: 0 30px;
+    cursor: pointer;
+  }
+  
+  .mainbar .singin-login {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .mainbar .singin-login .singin {
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mainbar .singin-login .login {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .artist {
+    border: none;
+    box-shadow: 0 0 1px #fff;
+    border-radius: 10px;
+    margin: 20px 0 ;
+    overflow: hidden;
+  }
+
+  .artist h3 {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  #artist .artist-list img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 2px 12px;
+  }
+
+  .artist-list ul {
+    display: flex;
+  }
+
+  .artist .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .artist h5 {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .artist h5:hover {
+    text-decoration: underline;
+  }
+  .artist span {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .artist span p {
+    font-weight: 400;
+    color: #ffffffa1;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  #best-song img {
+    height: 120px;
+    width: 120px;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px #fff;
+  }
